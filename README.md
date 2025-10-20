@@ -63,7 +63,7 @@
 
 [Посмотреть демо в браузере](https://skilledify.github.io/react-calculator/)  
 
-> 🔗 Замените ссылку на актуальный URL вашего проекта на Netlify/Vercel.
+Demo: https://skilledify.github.io/react-calculator/
 
 ---
 
