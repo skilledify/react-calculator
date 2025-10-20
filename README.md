@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# 🧮 Modern React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современный адаптивный калькулятор, написанный на **React + TypeScript** с использованием **Tailwind CSS** и анимаций через **Framer Motion**.  
+Поддерживает автоматическое переключение тёмной и светлой темы в зависимости от системных настроек пользователя.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Технологии
 
-## React Compiler
+Проект создан с использованием следующих инструментов:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- ⚛️ **React 18** — основа интерфейса и управления состоянием  
+- 🔷 **TypeScript** — строгая типизация для надёжного и масштабируемого кода  
+- 💨 **Tailwind CSS** — для быстрой и адаптивной стилизации  
+- 🎞 **Framer Motion** — для плавных анимаций при взаимодействии  
+- 🌗 **Автоматическая смена темы** — через `prefers-color-scheme`  
+- 🧮 **Vanilla Logic** — вся логика вычислений реализована без сторонних библиотек  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Цель проекта
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Создать компактное, стильное и функциональное приложение-калькулятор, демонстрирующее:
+- использование современных frontend-технологий (React + TypeScript);
+- адаптивный дизайн с помощью Tailwind CSS;
+- автоматическую поддержку системных тем;
+- плавные интерактивные анимации через Framer Motion.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💡 Возможное использование
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 💻 Веб-приложение для повседневных вычислений  
+- 🧩 Учебный проект для демонстрации работы с React и Tailwind  
+- 🎨 Пример интеграции Framer Motion в интерфейс  
+- 🔧 База для расширения — можно добавить память, журнал, историю или инженерный режим  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 Основные особенности
+
+- Автоматическое переключение темы (светлая / тёмная)  
+- Адаптивная вёрстка (поддержка от **320px**)  
+- Сохранение последних вычислений в истории  
+- Реалистичные анимации при нажатии кнопок  
+- Цветовая дифференциация кнопок:
+  - `C` — красная  
+  - `±` и `%` — синие  
+  - `÷`, `×`, `-`, `+` — оранжевые  
+  - `=` — зелёная  
+
+---
+
+## 🖼 Превью интерфейса
+
+![Calculator Preview](./preview/calculator-screenshot.png)
+
+> 📌 Помести скриншот калькулятора в папку `preview` в корне репозитория под именем `calculator-screenshot.png`.
+
+---
+
+## 🌐 Демо
+
+[Посмотреть демо в браузере](https://your-demo-link.netlify.app)  
+
+> 🔗 Замените ссылку на актуальный URL вашего проекта на Netlify/Vercel.
+
+---
+
+## ⚙️ Установка и запуск
+
+```bash
+# Клонирование репозитория
+git clone https://github.com/username/react-calculator.git
+
+# Переход в папку проекта
+cd react-calculator
+
+# Установка зависимостей
+npm install
+
+# Запуск локального сервера
+npm run dev
+🧾 Лицензия
+Проект распространяется под лицензией MIT.
+Вы можете свободно использовать, изменять и распространять код с указанием автора.
+
+👨‍💻 Автор
+Аркадий — Frontend-разработчик
+📌 Стек: HTML, CSS, Tailwind, JavaScript, TypeScript, React, Vue, Docker
+
+💬 Если проект понравился — поставь ⭐️ на GitHub, это мотивирует!
