@@ -63,7 +63,7 @@
 
 [Посмотреть демо в браузере](https://skilledify.github.io/react-calculator/)  
 
-Demo: https://skilledify.github.io/react-calculator/
+
 
 ---
 
